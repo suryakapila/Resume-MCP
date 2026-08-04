@@ -53,7 +53,6 @@ function mcpLanding(origin: string): Response {
     <li>In Claude Code, run:</li>
   </ol>
   <pre>claude mcp add --transport http resume ${url}</pre>
-  <p>Then ask your own Claude anything about the resume: what he owns today, whether he has run Kafka in production, or why the 2020 to 2023 gap. Any Streamable HTTP MCP client works.</p>
   <hr>
   <a class="back" href="/">Back to the resume</a>
 </div>
