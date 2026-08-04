@@ -1,7 +1,7 @@
 /* The Classical design system carries every token (colors, fonts, spacing,
    radii, shadows) and the base component classes, plus its own CSS reset.
    It @imports the Cormorant Garamond + Lora webfonts.
-   (We drop the scaffold's Tailwind + Inter — this design is a fixed
+   (We drop the scaffold's Tailwind + Inter - this design is a fixed
    editorial "paper" theme, and Tailwind's preflight would fight Classical's
    own reset.) */
 @import "./styles/classical.css";

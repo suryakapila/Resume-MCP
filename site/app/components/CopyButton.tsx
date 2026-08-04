@@ -20,7 +20,7 @@ export function CopyButton({
       setCopied(true);
       setTimeout(() => setCopied(false), 1600);
     } catch {
-      /* clipboard unavailable (insecure context / denied) — no-op */
+      /* clipboard unavailable (insecure context / denied) - no-op */
     }
   }
 

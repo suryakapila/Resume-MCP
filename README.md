@@ -7,7 +7,7 @@ My resume, as a **single source of truth** with three faces:
 - one `resume.json` + one shared search function that both read.
 
 The point is the shape, not the size: a typed boundary, validated arguments,
-predictable payloads — the same integration work I do all day.
+predictable payloads. The same backend systems I build every day.
 
 ---
 
@@ -15,7 +15,7 @@ predictable payloads — the same integration work I do all day.
 
 ```
 resume.json          ← the single source of truth (JSON Resume schema)
-shared/search.ts     ← searchBySkill(resume, skill) — imported by every artifact
+shared/search.ts     ← searchBySkill(resume, skill) - imported by every artifact
 server-local/        ← stdio MCP server (Claude Desktop, Claude Code)
 site/                ← React Router v7 site on Cloudflare Workers
 worker/              ← (roadmap) the same MCP server over HTTP, for remote clients
@@ -74,12 +74,12 @@ npm run build          # production build
 npm run deploy         # build + wrangler deploy  (needs `wrangler login` first)
 ```
 
-The site's `/resume.json` route serves the **repo-root** `resume.json` verbatim —
-no copy — so the download and the MCP server always agree.
+The site's `/resume.json` route serves the **repo-root** `resume.json` verbatim -
+no copy - so the download and the MCP server always agree.
 
 ---
 
-## 3. HTTP MCP endpoint — roadmap
+## 3. HTTP MCP endpoint - roadmap
 
 A Cloudflare Worker (or a `/mcp` route mounted into the site Worker) that exposes
 the same tools over Streamable HTTP, so any remote client (e.g. a claude.ai
@@ -88,4 +88,4 @@ connector) can query the resume without cloning anything. It reuses the same
 
 ---
 
-_Surya Prakash Rao Kapila — Hyderabad, India._
+_Surya Prakash Rao Kapila - Hyderabad, India._
