@@ -26,6 +26,7 @@ export function meta(_: Route.MetaArgs) {
 }
 
 const REPO_URL = "https://github.com/suryakapila";
+const REPO = "https://github.com/suryakapila/Resume-MCP";
 
 // Illustrative Claude Desktop config for the stdio MCP server (server-local/).
 const MCP_CONFIG = `{
@@ -463,7 +464,7 @@ export default function Home() {
               <div className="mcp-actions">
                 <CopyButton value={MCP_CONFIG} label="Copy config" />
                 <a
-                  href="/mcp-server/source"
+                  href={`${REPO}/blob/main/server-local/src/index.ts`}
                   target="_blank"
                   rel="noopener"
                   className="btn btn-secondary"
@@ -473,7 +474,7 @@ export default function Home() {
                   Server source
                 </a>
                 <a
-                  href="/mcp-server/readme"
+                  href={`${REPO}#readme`}
                   target="_blank"
                   rel="noopener"
                   className="btn btn-secondary"
