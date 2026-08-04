@@ -7,6 +7,7 @@ import {
   Download,
   FileCode2,
   FileJson2,
+  Globe,
   Mail,
   Phone,
   Sparkles,
@@ -70,6 +71,10 @@ const MCP_CONFIG = `{
     }
   }
 }`;
+
+// The live hosted MCP endpoint (this same Worker serves it at /mcp).
+const MCP_URL = "https://surya-resume-site.suryakapila.workers.dev/mcp";
+const MCP_CLI = `claude mcp add --transport http resume ${MCP_URL}`;
 
 // Prompts to paste into your own Claude once the MCP server is connected.
 const ASK_PROMPTS = [
@@ -342,12 +347,26 @@ export default function Home() {
                 </a>
               </div>
               <p
-                className="justify mcp-p"
-                style={{ marginTop: "var(--space-4)", fontSize: "14px" }}
+                className="mcp-side-label"
+                style={{ marginTop: "var(--space-6)" }}
               >
-                Prefer a hosted endpoint? This site also serves a live MCP server over HTTP
-                at <code>/mcp</code>, so any remote client can connect without cloning
-                anything.
+                Or connect over HTTP (no clone, no key)
+              </p>
+              <div className="code-card">
+                <div className="code-card-head">
+                  <Globe />
+                  <span>hosted endpoint · Streamable HTTP</span>
+                </div>
+                <pre>{MCP_URL}</pre>
+              </div>
+              <div className="mcp-actions">
+                <CopyButton value={MCP_URL} label="Copy URL" />
+                <CopyButton value={MCP_CLI} label="Copy Claude Code command" />
+              </div>
+              <p className="justify mcp-p" style={{ fontSize: "14px" }}>
+                In Claude (Desktop or web): Settings, then Connectors, then Add custom
+                connector, and paste the URL. In Claude Code: run the command above. Any
+                Streamable HTTP MCP client works.
               </p>
             </div>
 
