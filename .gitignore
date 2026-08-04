@@ -1,0 +1,6 @@
+dist/
+node_modules/
+.DS_Store
+
+# Original design-tool export (the DC template) — superseded by site/
+Portfolio with MCP resume server/

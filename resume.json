@@ -1,0 +1,129 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Surya Prakash Rao Kapila",
+    "label": "Backend Software Engineer | Distributed Systems | AI-Assisted Development",
+    "email": "surya.kapila@gmail.com",
+    "phone": "+91-6281505746",
+    "location": {
+      "city": "Hyderabad",
+      "countryCode": "IN"
+    },
+    "summary": "Engineer with 5+ years of professional experience, including 3 years building production backend systems and 2.5 years in test and validation engineering. Currently technical owner of a .NET Framework (C#) and SQL Server middleware platform that connects an applicant tracking system to the external HRIS ecosystem, serving 40+ enterprise clients at over 100,000 requests per day. Builds partner integrations and public APIs end to end, from requirements gathering through production remediation, and modernises legacy services alongside new feature development. Works daily in AI-assisted development workflows.",
+    "profiles": [
+      { "network": "LinkedIn", "url": "https://www.linkedin.com/in/surya-prakash-rao-k-2941b75b/" },
+      { "network": "GitHub", "url": "https://github.com/suryakapila/" }
+    ]
+  },
+  "work": [
+    {
+      "name": "Cadient Talent",
+      "position": "Software Engineer",
+      "location": "Hyderabad, India",
+      "startDate": "2025-05",
+      "endDate": "",
+      "highlights": [
+        "Primary technical owner of the platform after the team lead's departure, covering production support, client onboarding and vendor escalations across 40+ enterprise clients at over 100,000 requests per day.",
+        "Develop and maintain a .NET Framework (C#) middleware layer of WCF and ASMX SOAP services and REST endpoints, sitting between the internal applicant tracking system and the external HRIS ecosystem, responsible both for consuming partner integrations and for the public APIs exposed to external consumers.",
+        "Shipped 6 new integrations and modernised 5 existing ones in 14 months, each run from requirements gathering through interface design, C# implementation and production rollout: ZipRecruiter Jobs, AppCast job board export, UKG Pro new hire export, AccuSource background screening, QJumpers candidate import, and the internal Job, Location and User APIs.",
+        "Own correctness at the boundary: validating inbound and outbound payloads, propagating vendor results back to the ATS without loss or duplication, and absorbing interface changes vendors ship on their own schedule without client-facing downtime.",
+        "Resolve customer-reported production issues end to end, tracing failures across the C# layer, SQL Server and third-party APIs, and communicating root cause and remediation directly to enterprise clients and internal stakeholders.",
+        "Develop and maintain a multi-tenant Node.js and TypeScript service handling Job, Employee and Location synchronisation, with REST APIs on TypeScript, Zod, SQL Server and TypeORM plus retry and reconciliation handling so partial failures do not corrupt client data.",
+        "Write unit tests for C# services with MSTest, using AI to generate first-pass coverage and reviewing every case before merge.",
+        "Built internal engineering tooling on Claude Code and a RAG index over the codebase, cutting the time to trace a defect through an unfamiliar integration and shortening onboarding for new joiners.",
+        "Work through pull requests, peer code review and CI/CD pipelines, holding AI-generated changes to the same review bar as hand-written code."
+      ]
+    },
+    {
+      "name": "CoSchool",
+      "position": "Software Engineer & Consultant",
+      "location": "Hyderabad, India",
+      "startDate": "2023-07",
+      "endDate": "2025-04",
+      "highlights": [
+        "Built production REST APIs and backend services in Node.js, NestJS and TypeScript on an Agile team, applying object-oriented design and established service patterns.",
+        "Designed an event-driven notification platform on Kafka, decoupling distributed services through asynchronous messaging instead of synchronous calls.",
+        "Cut database load 35% by introducing Redis caching on hot read paths.",
+        "Improved backend response times roughly 20% through query optimisation and service refactoring.",
+        "Deployed and validated services with Docker; used AWS CloudWatch for observability across logs and metrics, monitoring application health and triaging production and pre-production issues.",
+        "Wrote Python scripts, schedulers and automated workflows to handle recurring backend and operational tasks without manual intervention.",
+        "Expanded automated regression coverage using Jest and Cucumber, raising confidence in release cycles.",
+        "Covered frontend delivery in React and Redux for six months during a team resource shortfall, building and shipping UI features alongside backend work.",
+        "Mentored junior engineers through code review and backend design sessions."
+      ]
+    },
+    {
+      "name": "Career Break",
+      "position": "Full-time preparation for the Indian Civil Services (UPSC) examination",
+      "location": "India",
+      "startDate": "2020-03",
+      "endDate": "2023-06",
+      "highlights": []
+    },
+    {
+      "name": "Robert Bosch GmbH (via Hays)",
+      "position": "Automotive Test Engineer",
+      "location": "Karlsruhe, Germany",
+      "startDate": "2018-07",
+      "endDate": "2020-02",
+      "highlights": [
+        "Validated automotive RADAR systems in C++ with the Vector toolchain in a safety-critical environment, working to formal test specifications and defect-tracking discipline."
+      ]
+    },
+    {
+      "name": "Cint Consulting",
+      "position": "Test Engineer (Freelance)",
+      "location": "Frankfurt am Main, Germany",
+      "startDate": "2016-06",
+      "endDate": "2017-06",
+      "highlights": [
+        "Performed hardware-in-the-loop (HIL) testing of photovoltaic inverter systems in C++ using MATLAB/Simulink models and the Vector toolchain, validating controller behaviour against simulated grid and array conditions and automating regression test cases against formal test specifications."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Hochschule Darmstadt, Germany",
+      "studyType": "M.Sc.",
+      "area": "Electrical Engineering & Information Technology",
+      "startDate": "2012-10",
+      "endDate": "2015-12"
+    },
+    {
+      "institution": "Jawaharlal Nehru Technological University",
+      "studyType": "B.Tech.",
+      "area": "Electrical & Electronics Engineering",
+      "startDate": "2008-09",
+      "endDate": "2012-05"
+    }
+  ],
+  "skills": [
+    { "name": "Languages", "keywords": ["C#", "TypeScript", "JavaScript", "SQL", "Python"] },
+    { "name": "Microsoft Stack", "keywords": [".NET Framework", "C#", "WCF", "ASMX", "SQL Server", "T-SQL", "SOAP / XML web services", "IIS"] },
+    { "name": "Backend", "keywords": ["Node.js", "NestJS", "Express.js", "REST & SOAP API design", "microservices", "systems integration"] },
+    { "name": "Frontend", "keywords": ["React", "Redux"] },
+    { "name": "Distributed Systems", "keywords": ["Kafka", "RabbitMQ", "event-driven architecture", "asynchronous processing"] },
+    { "name": "Databases", "keywords": ["SQL Server", "PostgreSQL", "MongoDB", "Redis", "TypeORM", "Mongoose"] },
+    { "name": "Cloud & DevOps", "keywords": ["AWS (EC2, S3, CloudWatch)", "observability & monitoring", "Docker", "GitHub Actions", "Jenkins", "CI/CD"] },
+    { "name": "Testing & Security", "keywords": ["MSTest", "Jest", "Cucumber", "unit & integration testing", "OAuth2", "JWT", "RBAC", "Zod", "secure coding"] },
+    { "name": "AI Engineering", "keywords": ["Claude Code", "Claude API / Anthropic SDK", "Gemini Flash", "RAG", "ChromaDB", "structured outputs", "prompt engineering"] },
+    { "name": "Tools", "keywords": ["Git", "GitHub", "Jira", "Agile / Scrum"] }
+  ],
+  "projects": [
+    {
+      "name": "Coding Agent",
+      "keywords": ["Python", "Gemini Flash"],
+      "description": "Autonomous coding agent with tool orchestration, multi-step reasoning and a validation layer that checks generated code before it is applied. Built as modular components so additional tools and model providers can be added."
+    },
+    {
+      "name": "AI Investment Pipeline",
+      "keywords": ["TypeScript", "Claude API", "ChromaDB"],
+      "description": "Three-stage pipeline that sources startups, scores them against a versioned investment thesis and generates evidence-backed memos, using structured outputs with caching and run-level observability."
+    },
+    {
+      "name": "RabbitMQ Pub/Sub Service",
+      "keywords": ["TypeScript"],
+      "description": "Message-driven publish/subscribe service on RabbitMQ with typed message contracts and consumer workflows that scale horizontally."
+    }
+  ]
+}
