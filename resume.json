@@ -105,14 +105,14 @@
     { "name": "Cloud & DevOps", "keywords": ["AWS (EC2, S3, CloudWatch)", "observability & monitoring", "Docker", "GitHub Actions", "Jenkins", "CI/CD"] },
     { "name": "Testing & Security", "keywords": ["MSTest", "Jest", "Cucumber", "unit & integration testing", "OAuth2", "JWT", "RBAC", "Zod", "secure coding"] },
     { "name": "AI Engineering", "keywords": ["Claude Code", "Claude API / Anthropic SDK", "Gemini Flash", "RAG", "ChromaDB", "structured outputs", "prompt engineering"] },
-    { "name": "Frontend & Tools", "keywords": ["React", "Redux", "Git", "GitHub", "Jira", "Agile / Scrum"] }
+    { "name": "Frontend & Tools", "keywords": ["React", "Remix", "Git", "GitHub", "Jira", "Agile / Scrum"] }
   ],
   "projects": [
     {
       "name": "RAG-Search-Engine",
       "category": "Retrieval",
-      "keywords": ["Python", "BM25", "embeddings", "rank fusion"],
-      "description": "A retrieval stack built from scratch (sparse ranking, dense retrieval, and their fusion) as the foundation for a full RAG system. Written to understand the tradeoffs rather than to wrap a library."
+      "keywords": ["Python", "ChromaDB", "hybrid retrieval", "vector search"],
+      "description": "Semantic search engine over OpenAPI specifications using Retrieval-Augmented Generation (RAG), hybrid retrieval and vector search to answer endpoint, schema and workflow queries with high relevance."
     },
     {
       "name": "Coding Agent",
