@@ -114,7 +114,7 @@ export default function Home() {
         <a href="#mcp">Resume MCP</a>
         <a href="#contact">Contact</a>
         <a
-          href="/Surya-Kapila-Resume.pdf"
+          href="/Surya_Kapila_Resume.pdf"
           download
           className="btn btn-primary"
           data-icon
@@ -536,14 +536,14 @@ export default function Home() {
                   <span>surya-prakash-rao-k</span>
                 </a>
                 <a
-                  href="/Surya-Kapila-Resume.pdf"
+                  href="/Surya_Kapila_Resume.pdf"
                   download
                   className="contact-link"
                   data-icon
                 >
                   <Download />
                   <span className="label">Resume</span>
-                  <span>Surya-Kapila-Resume.pdf</span>
+                  <span>Surya_Kapila_Resume.pdf</span>
                 </a>
               </div>
             </div>
