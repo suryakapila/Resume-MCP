@@ -80,7 +80,7 @@ const MCP_CLI = `claude mcp add --transport http resume ${MCP_URL}`;
 const ASK_PROMPTS = [
   "Has Surya run Kafka in production, and what did he build with it?",
   "What does Surya actually own in his current role?",
-  "What happened between 2020 and 2023?",
+  "What has Surya built with RAG and Claude Code?",
   "Would Surya be a good fit for a backend platform team?",
 ];
 
