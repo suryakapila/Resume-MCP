@@ -1,8 +1,11 @@
 import {
   ArrowUpRight,
   BookOpen,
+  BrainCircuit,
   Braces,
   Briefcase,
+  Building2,
+  Calendar,
   Code2,
   Download,
   FileCode2,
@@ -10,7 +13,11 @@ import {
   Globe,
   Mail,
   Phone,
+  Shield,
   Sparkles,
+  TrendingUp,
+  Users,
+  Zap,
 } from "lucide-react";
 import type { Route } from "./+types/home";
 import { CopyButton } from "../components/CopyButton";
@@ -50,7 +57,7 @@ const resume = resumeData as unknown as Resume;
 
 export function meta(_: Route.MetaArgs) {
   return [
-    { title: "Surya Prakash Rao Kapila · Backend Engineer, AI-Native" },
+    { title: "Surya Prakash Rao Kapila ·Backend Engineer • Distributed Systems • AI-Assisted Development" },
     {
       name: "description",
       content:
@@ -121,34 +128,64 @@ export default function Home() {
       <main className="container">
         {/* HERO - editorial (hand-written voice) */}
         <section className="hero">
-          <p className="hero-kicker">Backend Engineer · AI-Native · Hyderabad</p>
+          <p className="hero-kicker">Backend Engineer • Distributed Systems • AI Tooling</p>
           <h1 className="hero-name">
-            Surya Prakash <em>Rao</em> Kapila
+            Surya Prakash Rao Kapila
           </h1>
           <p className="lead justify hero-lead">
-            I build production backend systems that hold up: C#, TypeScript, SQL Server,
-            event-driven on Kafka, serving 40+ enterprise clients at 100,000+ requests a
-            day. And I don't just use AI, I build with it. Claude Code in my daily
-            workflow, a RAG index over a live codebase, and Gen AI systems written from
-            scratch. I go deep, stay curious, and keep the backend ahead of where AI is
-            heading.
+            I build and own production backend systems that power enterprise software at scale. My experience spans modern TypeScript services and large .NET platforms, where I design integrations, solve production problems, and deliver reliable systems serving 40+ enterprise customers processing over 100,000 requests every day.
           </p>
-          <div className="stat-strip">
+          <p className="justify hero-lead">
+            Beyond production engineering, I build AI-powered developer tools, from RAG systems over production codebases to MCP servers and autonomous coding agents, applying AI to solve real engineering problems rather than building demos.
+          </p>
+          <div className="stat-card">
             <div className="stat">
+              <div className="stat-ic">
+                <Calendar />
+              </div>
               <div className="num stat-num">5+</div>
+              <span className="stat-underline" />
               <div className="stat-label">Years engineering</div>
+              <div className="stat-desc">
+                <Users />
+                <span>Across software &amp; systems engineering</span>
+              </div>
             </div>
             <div className="stat">
+              <div className="stat-ic">
+                <Building2 />
+              </div>
               <div className="num stat-num">40+</div>
+              <span className="stat-underline" />
               <div className="stat-label">Enterprise clients</div>
+              <div className="stat-desc">
+                <Shield />
+                <span>Serving enterprise platforms in production</span>
+              </div>
             </div>
             <div className="stat">
+              <div className="stat-ic">
+                <TrendingUp />
+              </div>
               <div className="num stat-num">100k</div>
+              <span className="stat-underline" />
               <div className="stat-label">Requests / day</div>
+              <div className="stat-desc">
+                <Zap />
+                <span>Handled with reliability at scale</span>
+              </div>
             </div>
             <div className="stat">
+              <div className="stat-ic">
+                <BrainCircuit />
+              </div>
               <div className="num stat-num">AI-Native</div>
+              <span className="stat-underline" />
               <div className="stat-label">RAG · agents · pipelines</div>
+              <div className="stat-desc">
+                <Code2 />
+                <span>AI-powered tooling that ships</span>
+              </div>
             </div>
           </div>
         </section>
@@ -156,7 +193,7 @@ export default function Home() {
         {/* Availability */}
         <div className="availability">
           <span className="dot" />
-          <span>Open to SDE2/SDE3 roles, remote or Hyderabad</span>
+          <span>Building scalable backend platforms. Open to Backend Engineer and SDE II/III opportunities.</span>
           <a href="mailto:surya.kapila@gmail.com">surya.kapila@gmail.com</a>
         </div>
 
@@ -463,7 +500,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="contact-hed">
-                Let's build the backend for <em>what's next</em>.
+                Building products that need reliable backend engineering?
               </h3>
               <div className="contact-links">
                 <a href="mailto:surya.kapila@gmail.com" className="contact-link" data-icon>
@@ -516,7 +553,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <span>Surya Prakash Rao Kapila · Hyderabad, India</span>
-        <span>Hand-built. Also available as an MCP server.</span>
+        <span>Built for people. Queryable by AI.</span>
       </footer>
     </div>
   );

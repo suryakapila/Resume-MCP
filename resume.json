@@ -97,7 +97,7 @@
     }
   ],
   "skills": [
-    { "name": "Languages", "keywords": ["C#", "TypeScript", "JavaScript", "SQL", "Python"] },
+    { "name": "Languages", "keywords": ["TypeScript", "JavaScript", "SQL", "Python", "C#"] },
     { "name": "Backend", "keywords": ["Node.js", "NestJS", "Express.js", "REST & SOAP API design", "microservices", "systems integration"] },
     { "name": "Microsoft Stack", "keywords": [".NET Framework", "C#", "WCF", "ASMX", "SQL Server", "T-SQL", "SOAP / XML web services", "IIS"] },
     { "name": "Distributed Systems", "keywords": ["Kafka", "RabbitMQ", "event-driven architecture", "asynchronous processing"] },
