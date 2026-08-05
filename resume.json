@@ -2,14 +2,14 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Surya Prakash Rao Kapila",
-    "label": "Backend Software Engineer | Distributed Systems | AI-Native Development",
+    "label": "Backend Software Engineer | Distributed Systems | AI-Assisted Development",
     "email": "surya.kapila@gmail.com",
     "phone": "+91-6281505746",
     "location": {
       "city": "Hyderabad",
       "countryCode": "IN"
     },
-    "summary": "Backend engineer with 5+ years of professional experience: 3 years building and running production backend systems, plus 2.5 years in test and validation engineering. Currently the technical owner of a platform serving 40+ enterprise clients at over 100,000 requests per day, built on C#/.NET and SQL Server with Node.js and TypeScript services alongside. Builds AI natively: ships daily on Claude Code, stood up a RAG index over a production codebase, and writes Gen AI systems from scratch. Goes deep, stays curious, and keeps the backend ahead of where AI is heading.",
+    "summary": "Engineer with 5+ years of professional experience, including 3 years building production backend systems and 2.5 years in test and validation engineering. Currently technical owner of a .NET Framework (C#) and SQL Server middleware platform that connects an applicant tracking system to the external HRIS ecosystem, serving 40+ enterprise clients at over 100,000 requests per day. Builds partner integrations and public APIs end to end, from requirements gathering through production remediation, and modernises legacy services alongside new feature development. Applies AI throughout the software development lifecycle, building internal developer tooling while maintaining production engineering standards.",
     "profiles": [
       { "network": "LinkedIn", "url": "https://www.linkedin.com/in/surya-prakash-rao-k-2941b75b/" },
       { "network": "GitHub", "url": "https://github.com/suryakapila/" }
@@ -24,13 +24,15 @@
       "endDate": "",
       "keywords": ["C# / .NET", "SQL Server", "TypeScript · TypeORM · Zod", "Claude Code · RAG", "MSTest"],
       "highlights": [
-        "Primary technical owner of a backend platform serving 40+ enterprise clients at over 100,000 requests per day, covering production support, architecture and delivery after the team lead's departure.",
-        "Built a multi-tenant Node.js and TypeScript service for Job, Employee and Location synchronisation: REST APIs on TypeScript, Zod, SQL Server and TypeORM, with retry and reconciliation so partial failures never corrupt client data.",
-        "Built internal engineering tooling on Claude Code plus a RAG index over the codebase, cutting the time to trace a defect through unfamiliar code and shortening onboarding for new joiners. AI applied as production engineering, not a demo.",
-        "Write unit tests for C# services with MSTest, using AI to generate first-pass coverage and reviewing every case before merge; hold AI-generated changes to the same review bar as hand-written code, through pull requests, peer review and CI/CD.",
-        "Design and run a C# service layer of WCF/ASMX SOAP services and REST endpoints over SQL Server, owning correctness at the boundary: validating payloads in both directions and absorbing upstream changes without client-facing downtime.",
-        "Delivered 11 partner integrations end to end in 14 months, from requirements through interface design, C# implementation and production rollout, across job distribution, HRIS and background-screening partners (ZipRecruiter, AppCast, UKG Pro, AccuSource, QJumpers, and internal Job/Location/User APIs).",
-        "Resolve customer-reported production issues end to end, tracing failures across the C# layer, SQL Server and third-party APIs, and communicating root cause and remediation directly to enterprise clients."
+        "Primary technical owner of a platform serving 40+ enterprise clients at over 100,000 requests per day, leading production support, client onboarding, and vendor integrations.",
+        "Develop and maintain a .NET Framework (C#) middleware layer of WCF and ASMX SOAP services and REST endpoints, sitting between the internal applicant tracking system and the external HRIS ecosystem and responsible both for consuming partner integrations and for the public APIs exposed to external consumers.",
+        "Shipped 6 new integrations and modernised 5 existing ones in 14 months, each run from requirements gathering through interface design, C# implementation and production rollout: ZipRecruiter Jobs, AppCast job board export, UKG Pro new hire export, AccuSource background screening, QJumpers candidate import, and the internal Job, Location and User APIs.",
+        "Own data integrity at system boundaries, validating inbound and outbound payloads, preventing duplication and loss, and absorbing vendor API changes without client-facing downtime.",
+        "Resolve customer-reported production issues end to end, tracing failures across the C# layer, SQL Server and third-party APIs, and communicating root cause and remediation directly to enterprise clients and internal stakeholders.",
+        "Develop and maintain a multi-tenant Node.js and TypeScript service handling Job, Employee and Location synchronisation, with REST APIs on TypeScript, Zod, SQL Server and TypeORM plus retry and reconciliation handling so partial failures do not corrupt client data.",
+        "Write unit tests for C# services with MSTest, using AI to generate first-pass coverage and reviewing every case before merge.",
+        "Built internal engineering tooling on Claude Code and a RAG index over the codebase, cutting the time to trace a defect through an unfamiliar integration and shortening onboarding for new joiners.",
+        "Work through pull requests, peer code review and CI/CD pipelines, holding AI-generated changes to the same review bar as hand-written code."
       ]
     },
     {
@@ -43,10 +45,13 @@
       "highlights": [
         "Built production REST APIs and backend services in Node.js, NestJS and TypeScript on an Agile team, applying object-oriented design and established service patterns.",
         "Designed an event-driven notification platform on Kafka, decoupling distributed services through asynchronous messaging instead of synchronous calls.",
-        "Cut database load 35% with Redis caching on hot read paths, and improved backend response times roughly 20% through query optimisation and service refactoring.",
+        "Cut database load 35% by introducing Redis caching on hot read paths.",
+        "Improved backend response times roughly 20% through query optimisation and service refactoring.",
         "Deployed and validated services with Docker; used AWS CloudWatch for observability across logs and metrics, monitoring application health and triaging production and pre-production issues.",
         "Wrote Python scripts, schedulers and automated workflows to handle recurring backend and operational tasks without manual intervention.",
-        "Expanded automated regression coverage with Jest and Cucumber; covered frontend delivery in React and Redux for six months during a resource shortfall; mentored junior engineers through code review and backend design sessions."
+        "Expanded automated regression coverage using Jest and Cucumber, raising confidence in release cycles.",
+        "Covered frontend delivery in React and Redux for six months during a team resource shortfall, building and shipping UI features alongside backend work.",
+        "Mentored junior engineers through code review and backend design sessions."
       ]
     },
     {
@@ -97,34 +102,35 @@
     }
   ],
   "skills": [
-    { "name": "Languages", "keywords": ["TypeScript", "JavaScript", "SQL", "Python", "C#"] },
-    { "name": "Backend", "keywords": ["Node.js", "NestJS", "Express.js", "REST & SOAP API design", "microservices", "systems integration"] },
+    { "name": "Languages", "keywords": ["TypeScript", "JavaScript", "Python", "SQL", "C#"] },
     { "name": "Microsoft Stack", "keywords": [".NET Framework", "C#", "WCF", "ASMX", "SQL Server", "T-SQL", "SOAP / XML web services", "IIS"] },
+    { "name": "Backend", "keywords": ["Node.js", "NestJS", "Express.js", "REST & SOAP API design", "microservices", "systems integration"] },
+    { "name": "Frontend", "keywords": ["React", "Remix"] },
     { "name": "Distributed Systems", "keywords": ["Kafka", "RabbitMQ", "event-driven architecture", "asynchronous processing"] },
     { "name": "Databases", "keywords": ["SQL Server", "PostgreSQL", "MongoDB", "Redis", "TypeORM", "Mongoose"] },
     { "name": "Cloud & DevOps", "keywords": ["AWS (EC2, S3, CloudWatch)", "observability & monitoring", "Docker", "GitHub Actions", "Jenkins", "CI/CD"] },
     { "name": "Testing & Security", "keywords": ["MSTest", "Jest", "Cucumber", "unit & integration testing", "OAuth2", "JWT", "RBAC", "Zod", "secure coding"] },
     { "name": "AI Engineering", "keywords": ["Claude Code", "Claude API / Anthropic SDK", "Gemini Flash", "RAG", "ChromaDB", "structured outputs", "prompt engineering"] },
-    { "name": "Frontend & Tools", "keywords": ["React", "Remix", "Git", "GitHub", "Jira", "Agile / Scrum"] }
+    { "name": "Tools", "keywords": ["Git", "GitHub", "Jira", "Agile / Scrum"] }
   ],
   "projects": [
     {
       "name": "RAG-Search-Engine",
       "category": "Retrieval",
-      "keywords": ["Python", "ChromaDB", "hybrid retrieval", "vector search"],
-      "description": "Semantic search engine over OpenAPI specifications using Retrieval-Augmented Generation (RAG), hybrid retrieval and vector search to answer endpoint, schema and workflow queries with high relevance."
+      "keywords": ["Python", "ChromaDB", "BM25", "RRF"],
+      "description": "Built an information retrieval engine that incrementally evolves from BM25 to semantic, hybrid, and RRF retrieval, forming the foundation of a production-style RAG system. Explores the engineering trade-offs behind modern search systems rather than treating RAG as a black box."
     },
     {
       "name": "Coding Agent",
       "category": "Agents",
       "keywords": ["Python", "Gemini Flash", "tool use"],
-      "description": "Autonomous coding agent with tool orchestration, multi-step reasoning and a validation layer that checks generated code before it is applied. Built as modular components so additional tools and model providers can be added."
+      "description": "Designed and built a modular coding agent with separate planning, tool execution, and validation stages, enabling iterative code generation and verification before changes are applied."
     },
     {
       "name": "AI Investment Pipeline",
       "category": "Pipelines",
       "keywords": ["TypeScript", "Claude API", "ChromaDB"],
-      "description": "Three-stage pipeline that sources startups, scores them against a versioned investment thesis and generates evidence-backed memos, using structured outputs with caching and run-level observability."
+      "description": "Designed and built an AI orchestration engine that coordinates three autonomous workflows for startup sourcing, thesis-based evaluation, and investment memo generation. Implemented structured outputs, caching, and run-level observability to deliver reliable, traceable, and repeatable results."
     },
     {
       "name": "RabbitMQ Pub/Sub Service",
