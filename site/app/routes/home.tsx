@@ -57,7 +57,7 @@ const resume = resumeData as unknown as Resume;
 
 export function meta(_: Route.MetaArgs) {
   const url = "https://surya-resume-site.suryakapila.workers.dev";
-  const ogTitle = "Surya Prakash Rao Kapila · Backend Engineer, AI-Native";
+  const ogTitle = "Surya Prakash Rao Kapila · Backend Engineer";
   const ogDescription =
     "Backend engineer building production systems and AI tooling. Resume also runs as an MCP server.";
   const ogImage = `${url}/og.png`;
