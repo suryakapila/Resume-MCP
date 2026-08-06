@@ -56,6 +56,11 @@ type Resume = {
 const resume = resumeData as unknown as Resume;
 
 export function meta(_: Route.MetaArgs) {
+  const url = "https://surya-resume-site.suryakapila.workers.dev";
+  const ogTitle = "Surya Prakash Rao Kapila · Backend Engineer, AI-Native";
+  const ogDescription =
+    "Backend engineer building production systems and AI tooling. Resume also runs as an MCP server.";
+  const ogImage = `${url}/og.png`;
   return [
     { title: "Surya Prakash Rao Kapila ·Backend Engineer • Distributed Systems • AI-Assisted Development" },
     {
@@ -63,6 +68,17 @@ export function meta(_: Route.MetaArgs) {
       content:
         "Backend software engineer building production systems in C#, TypeScript and Kafka, and building natively with AI: Claude Code, RAG and agents. Resume also runs as an MCP server.",
     },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: url },
+    { property: "og:title", content: ogTitle },
+    { property: "og:description", content: ogDescription },
+    { property: "og:image", content: ogImage },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: ogTitle },
+    { name: "twitter:description", content: ogDescription },
+    { name: "twitter:image", content: ogImage },
   ];
 }
 
