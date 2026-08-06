@@ -136,7 +136,7 @@
       "name": "RabbitMQ Pub/Sub Service",
       "category": "Messaging",
       "keywords": ["TypeScript", "RabbitMQ"],
-      "description": "Message-driven publish/subscribe service on RabbitMQ with typed message contracts and consumer workflows that scale horizontally."
+      "description": "Event-driven pub/sub service on RabbitMQ (TypeScript): topic and direct exchanges, dead-letter queues, publisher confirms, and prefetch-based backpressure, with three-way message acknowledgement for reliable delivery."
     }
   ]
 }

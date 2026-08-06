@@ -69,19 +69,19 @@ export function meta(_: Route.MetaArgs) {
 const REPO_URL = "https://github.com/suryakapila";
 const REPO = "https://github.com/suryakapila/Resume-MCP";
 
-// Illustrative Claude Desktop config for the stdio MCP server (server-local/).
-const MCP_CONFIG = `{
-  "mcpServers": {
-    "resume": {
-      "command": "node",
-      "args": ["/path/to/server-local/dist/server-local/src/index.js"]
-    }
-  }
-}`;
-
 // The live hosted MCP endpoint (this same Worker serves it at /mcp).
 const MCP_URL = "https://surya-resume-site.suryakapila.workers.dev/mcp";
 const MCP_CLI = `claude mcp add --transport http resume ${MCP_URL}`;
+
+// claude_desktop_config.json entry for the hosted endpoint, via the mcp-remote bridge.
+const MCP_CONFIG = `{
+  "mcpServers": {
+    "resume": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "${MCP_URL}"]
+    }
+  }
+}`;
 
 // Prompts to paste into your own Claude once the MCP server is connected.
 const ASK_PROMPTS = [
@@ -133,11 +133,9 @@ export default function Home() {
             Surya Prakash Rao Kapila
           </h1>
           <p className="lead justify hero-lead">
-            I build and own production backend systems that power enterprise software at scale. My experience spans modern TypeScript services and large .NET platforms, where I design integrations, solve production problems, and deliver reliable systems serving 40+ enterprise customers processing over 100,000 requests every day.
-          </p>
+            I build and own production backend systems that integrate enterprise software at scale, serving 40+ enterprise clients and processing over 100,000 requests a day. My work spans across legacy .NET middleware and modern TypeScript services, evolving business-critical systems without disrupting production while designing reliable integrations between them.          </p>
           <p className="justify hero-lead">
-            Beyond production engineering, I build AI-powered developer tools, from RAG systems over production codebases to MCP servers and autonomous coding agents, applying AI to solve real engineering problems rather than building demos.
-          </p>
+            Alongside production engineering, I build AI-powered developer tooling, including RAG systems over production codebases, MCP servers, and autonomous coding agents. I enjoy applying AI where it solves real engineering problems, making complex systems easier to understand, maintain, and evolve.          </p>
           <div className="stat-card">
             <div className="stat">
               <div className="stat-ic">
@@ -342,13 +340,16 @@ export default function Home() {
                   {": {\n    "}
                   <span className="k">"resume"</span>
                   {": {\n      "}
-                  <span className="k">"command"</span>: <span className="s">"node"</span>
+                  <span className="k">"command"</span>: <span className="s">"npx"</span>
                   {",\n      "}
-                  <span className="k">"args"</span>: [
-                  <span className="s">
-                    "/path/to/server-local/dist/server-local/src/index.js"
-                  </span>
-                  ]{"\n    }\n  }\n}"}
+                  <span className="k">"args"</span>
+                  {": [\n        "}
+                  <span className="s">"-y"</span>
+                  {",\n        "}
+                  <span className="s">"mcp-remote"</span>
+                  {",\n        "}
+                  <span className="s">"{MCP_URL}"</span>
+                  {"\n      ]\n    }\n  }\n}"}
                 </pre>
               </div>
               <div className="mcp-actions">
@@ -507,11 +508,6 @@ export default function Home() {
                   <Mail />
                   <span className="label">Email</span>
                   <span>surya.kapila@gmail.com</span>
-                </a>
-                <a href="tel:+916281505746" className="contact-link" data-icon>
-                  <Phone />
-                  <span className="label">Phone</span>
-                  <span className="num">+91 62815 05746</span>
                 </a>
                 <a
                   href={REPO_URL}
